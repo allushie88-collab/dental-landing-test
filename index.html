@@ -1,163 +1,446 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dental Tourism Albania</title>
+  <title>Denti fissi in 4–6 giorni a Tirana | ArtDent Clinic</title>
+  <meta name="description" content="ArtDent Clinic a Tirana: denti fissi in 4–6 giorni, oltre 20 anni di esperienza e più di 370 recensioni positive. Richiedi ora il preventivo gratuito." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0f7db8" />
+  <link rel="canonical" href="https://artdentclinic.example/" />
   <style>
     :root {
-      --primary: #0b7f8c;
-      --secondary: #0f3d56;
-      --bg: #f4fbfc;
-      --text: #1a2a33;
+      --primary: #0f7db8;
+      --primary-dark: #095f8d;
+      --accent: #1ca4ff;
+      --bg: #f3faff;
+      --surface: #ffffff;
+      --text: #173042;
+      --muted: #5a7587;
+      --whatsapp: #25d366;
+      --radius: 14px;
+      --shadow: 0 10px 24px rgba(15, 61, 92, 0.12);
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(140deg, var(--bg), #ffffff);
+      font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
       color: var(--text);
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 24px;
+      background: linear-gradient(180deg, #eef8ff 0%, #ffffff 35%, #f7fcff 100%);
+      line-height: 1.5;
     }
 
-    .landing {
-      width: min(900px, 100%);
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 14px 40px rgba(15, 61, 86, 0.15);
+    img { max-width: 100%; display: block; }
+
+    .container {
+      width: min(1120px, 92vw);
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: 28px 0 36px;
+    }
+
+    .hero-card {
+      background: var(--surface);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 24px;
       display: grid;
       gap: 24px;
-      grid-template-columns: 1fr;
-      padding: 28px;
     }
 
     h1 {
-      margin: 0;
-      color: var(--secondary);
-      font-size: clamp(1.8rem, 3.2vw, 2.5rem);
-      line-height: 1.2;
+      margin: 0 0 10px;
+      font-size: clamp(1.8rem, 4.4vw, 3rem);
+      line-height: 1.16;
+      color: #0f3f5c;
     }
 
-    p {
-      margin: 0;
-      font-size: 1.06rem;
-      max-width: 62ch;
-      line-height: 1.6;
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(1.4rem, 2.8vw, 2rem);
+      color: #0f3f5c;
     }
 
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items: center;
+    p { margin: 0; color: var(--muted); }
+
+    .hero p { font-size: 1.05rem; }
+
+    .cta-group {
+      display: grid;
+      gap: 10px;
+      margin-top: 20px;
     }
 
-    .whatsapp-btn {
-      text-decoration: none;
+    .btn {
       display: inline-flex;
-      align-items: center;
       justify-content: center;
-      padding: 12px 18px;
-      border-radius: 999px;
+      align-items: center;
+      text-decoration: none;
       font-weight: 700;
-      color: white;
-      background: #25d366;
-      box-shadow: 0 8px 18px rgba(37, 211, 102, 0.35);
+      border-radius: 10px;
+      padding: 13px 16px;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .form-card {
-      background: #f8fdff;
-      border: 1px solid #d8edf2;
-      border-radius: 12px;
+    .btn:hover { transform: translateY(-1px); }
+
+    .btn-primary {
+      color: #fff;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      box-shadow: 0 8px 16px rgba(15, 125, 184, 0.26);
+    }
+
+    .btn-whatsapp {
+      color: #fff;
+      background: var(--whatsapp);
+      box-shadow: 0 8px 16px rgba(37, 211, 102, 0.28);
+    }
+
+    section { padding: 28px 0; }
+
+    .cards-3 {
+      display: grid;
+      gap: 12px;
+    }
+
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 16px;
+      border: 1px solid #dbeefa;
+      box-shadow: 0 4px 16px rgba(14, 94, 140, 0.08);
+    }
+
+    .card strong {
+      display: block;
+      color: #0e547f;
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+    }
+
+    .before-after {
+      display: grid;
+      gap: 12px;
+    }
+
+    .ba-box {
+      background: #eaf6ff;
+      border: 1px dashed #9bccef;
+      border-radius: var(--radius);
+      min-height: 120px;
+      display: grid;
+      place-items: center;
+      color: #2b6f99;
+      font-weight: 700;
+      text-align: center;
+      padding: 12px;
+    }
+
+    .steps {
+      counter-reset: flow;
+      display: grid;
+      gap: 12px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .steps li {
+      background: var(--surface);
+      border: 1px solid #dbeefa;
+      border-radius: var(--radius);
+      padding: 14px 14px 14px 50px;
+      position: relative;
+      color: #355769;
+      box-shadow: 0 4px 12px rgba(16, 93, 140, 0.08);
+    }
+
+    .steps li::before {
+      counter-increment: flow;
+      content: counter(flow);
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      translate: 0 -50%;
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.85rem;
+      display: grid;
+      place-items: center;
+    }
+
+    .pricing {
+      background: linear-gradient(145deg, #eff8ff, #ffffff);
+      border: 1px solid #d6ecfa;
+      border-radius: var(--radius);
+      padding: 18px;
+    }
+
+    .pricing strong {
+      color: var(--primary-dark);
+      font-size: 1.2rem;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .benefits {
+      display: grid;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .benefits li {
+      background: var(--surface);
+      border-radius: 10px;
+      border: 1px solid #dbeefa;
+      padding: 12px;
+      color: #2d556c;
+      font-weight: 600;
+    }
+
+    .benefits li::before {
+      content: "✓ ";
+      color: var(--primary);
+      font-weight: 800;
+    }
+
+    .contact {
+      background: var(--surface);
+      border-radius: var(--radius);
+      border: 1px solid #dbeefa;
+      box-shadow: var(--shadow);
       padding: 18px;
     }
 
     form {
       display: grid;
       gap: 12px;
+      margin-top: 10px;
     }
 
     label {
-      font-weight: 700;
-      font-size: 0.95rem;
-      color: #20495e;
       display: grid;
       gap: 6px;
+      font-weight: 600;
+      color: #274b60;
+      font-size: 0.95rem;
     }
 
     input {
-      border: 1px solid #b7d6df;
-      border-radius: 8px;
-      padding: 11px 12px;
+      border: 1px solid #bddff4;
+      border-radius: 10px;
+      padding: 12px;
       font-size: 1rem;
     }
 
-    button {
-      border: none;
+    input:focus {
+      outline: 2px solid #b8e4ff;
+      border-color: var(--primary);
+    }
+
+    .disclaimer {
+      font-size: 0.88rem;
+      margin-top: 8px;
+    }
+
+    .thank-you {
+      margin-top: 12px;
+      padding: 12px;
       border-radius: 10px;
-      padding: 12px 16px;
-      background: var(--primary);
-      color: white;
-      font-weight: 700;
-      cursor: pointer;
+      background: #e9f9f0;
+      color: #165f3b;
+      font-weight: 600;
+      display: none;
+      white-space: pre-line;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 14px;
+      bottom: 14px;
+      z-index: 100;
+    }
+
+    footer {
+      padding: 26px 0 34px;
+      font-size: 0.95rem;
+      text-align: center;
+      color: #3f6478;
     }
 
     @media (min-width: 760px) {
-      .landing {
+      .hero-card {
         grid-template-columns: 1.2fr 1fr;
-        align-items: start;
+        align-items: center;
+      }
+
+      .cards-3,
+      .before-after {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .cta-group {
+        display: flex;
+        flex-wrap: wrap;
       }
     }
   </style>
 </head>
 <body>
-  <main class="landing">
-    <section>
-      <h1>Smile in Albania: Premium Dental Care, Lower Cost</h1>
-      <p>
-        Travel to Albania for high-quality dental treatments with experienced specialists,
-        modern clinics, and transparent prices. Save up to 70% while enjoying your recovery
-        by the Adriatic coast.
-      </p>
-      <div class="actions">
-        <a
-          class="whatsapp-btn"
-          href="https://wa.me/355690000000?text=Hello%2C%20I%20want%20information%20about%20dental%20tourism%20in%20Albania."
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Chat on WhatsApp
-        </a>
+  <header class="hero">
+    <div class="container hero-card">
+      <div>
+        <h1>Denti fissi in 4–6 giorni a Tirana</h1>
+        <p>Clinica con oltre 20 anni di esperienza e più di 370 recensioni positive.</p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="#contatto">Richiedi preventivo gratuito</a>
+          <a class="btn btn-whatsapp" href="https://wa.me/355694860411?text=Buongiorno%2C%20vorrei%20un%20preventivo%20gratuito%20per%20denti%20fissi." target="_blank" rel="noopener noreferrer">Contattaci su WhatsApp</a>
+        </div>
+      </div>
+      <div class="card">
+        <strong>ArtDent Clinic</strong>
+        <p>Tirana, Albania</p>
+        <p>Soluzioni implantari avanzate per pazienti italiani con percorso completo e supporto dedicato.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section aria-label="Indicatori di fiducia">
+      <div class="container">
+        <h2>Perché scegliere ArtDent Clinic</h2>
+        <div class="cards-3">
+          <article class="card"><strong>20+ anni di esperienza</strong><p>Team medico esperto in implantologia e riabilitazioni complete.</p></article>
+          <article class="card"><strong>370+ recensioni positive</strong><p>Pazienti soddisfatti provenienti da tutta Italia.</p></article>
+          <article class="card"><strong>Laboratorio dentistico interno</strong><p>Tempi rapidi e controllo diretto su ogni fase della protesi.</p></article>
+        </div>
       </div>
     </section>
 
-    <aside class="form-card">
-      <form>
-        <label>
-          Name
-          <input type="text" name="name" placeholder="Your full name" required />
-        </label>
+    <section aria-label="Risultati prima e dopo">
+      <div class="container">
+        <h2>Prima e dopo</h2>
+        <p>Risultati reali ottenuti con protocolli implantari moderni e pianificazione digitale.</p>
+        <div class="before-after" style="margin-top:12px;">
+          <div class="ba-box">Caso 1<br/>Prima / Dopo</div>
+          <div class="ba-box">Caso 2<br/>Prima / Dopo</div>
+          <div class="ba-box">Caso 3<br/>Prima / Dopo</div>
+        </div>
+      </div>
+    </section>
 
-        <label>
-          Phone
-          <input type="tel" name="phone" placeholder="+39 000 000000" required />
-        </label>
+    <section aria-label="Come funziona">
+      <div class="container">
+        <h2>Come funziona</h2>
+        <ol class="steps">
+          <li>Invia la panoramica dentale</li>
+          <li>Ricevi il piano di cura e il preventivo</li>
+          <li>Vieni a Tirana per il trattamento</li>
+        </ol>
+        <p style="margin-top:10px;">Il trattamento per i denti fissi richiede solitamente 4–6 giorni.</p>
+      </div>
+    </section>
 
-        <label>
-          Email
-          <input type="email" name="email" placeholder="you@example.com" required />
-        </label>
+    <section aria-label="Prezzi">
+      <div class="container">
+        <h2>Quanto costa</h2>
+        <div class="pricing">
+          <strong>Denti fissi su impianti a partire da circa €3500 per arcata.</strong>
+          <p class="disclaimer">Il prezzo finale viene definito dopo la valutazione della panoramica dentale.</p>
+        </div>
+      </div>
+    </section>
 
-        <button type="submit">Request a Free Consultation</button>
-      </form>
-    </aside>
+    <section aria-label="Pacchetto turismo dentale">
+      <div class="container">
+        <h2>Pacchetto turismo dentale</h2>
+        <ul class="benefits">
+          <li>Hotel incluso</li>
+          <li>Transfer aeroporto</li>
+          <li>Assistenza in italiano</li>
+          <li>Preventivo gratuito</li>
+          <li>Garanzia sugli impianti</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contatto" aria-label="Modulo di contatto">
+      <div class="container contact">
+        <h2>Richiedi il tuo preventivo gratuito</h2>
+        <p>Compila il modulo: il nostro team ti risponderà rapidamente in italiano.</p>
+        <form id="leadForm">
+          <label for="nome">Nome
+            <input id="nome" name="Nome" type="text" required autocomplete="name" />
+          </label>
+          <label for="telefono">Telefono
+            <input id="telefono" name="Telefono" type="tel" required autocomplete="tel" />
+          </label>
+          <label for="email">Email
+            <input id="email" name="Email" type="email" required autocomplete="email" />
+          </label>
+          <button class="btn btn-primary" type="submit">Invia richiesta</button>
+        </form>
+        <div id="thankYouMessage" class="thank-you">Grazie per aver richiesto il preventivo.
+Ti contatteremo entro poche ore.</div>
+      </div>
+    </section>
   </main>
+
+  <a class="btn btn-whatsapp whatsapp-float" href="https://wa.me/355694860411?text=Buongiorno%2C%20vorrei%20informazioni%20sui%20denti%20fissi%20in%204-6%20giorni." target="_blank" rel="noopener noreferrer" aria-label="Contattaci su WhatsApp">WhatsApp</a>
+
+  <footer>
+    ArtDent Clinic · Tirana, Albania · Email: <a href="mailto:allushie88@gmail.com">allushie88@gmail.com</a>
+  </footer>
+
+  <script>
+    const form = document.getElementById('leadForm');
+    const thankYou = document.getElementById('thankYouMessage');
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const submitButton = form.querySelector('button[type="submit"]');
+      submitButton.disabled = true;
+      submitButton.textContent = 'Invio in corso...';
+
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/allushie88@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            Nome: document.getElementById('nome').value,
+            Telefono: document.getElementById('telefono').value,
+            Email: document.getElementById('email').value,
+            _subject: 'Nuova richiesta preventivo - ArtDent Clinic'
+          })
+        });
+
+        if (!response.ok) throw new Error('Invio non riuscito');
+
+        form.reset();
+        thankYou.style.display = 'block';
+      } catch (error) {
+        alert('Si è verificato un problema durante l\'invio. Contattaci su WhatsApp al +355694860411.');
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = 'Invia richiesta';
+      }
+    });
+  </script>
 </body>
 </html>
