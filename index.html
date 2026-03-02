@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dental Tourism Albania</title>
+  <style>
+    :root {
+      --primary: #0b7f8c;
+      --secondary: #0f3d56;
+      --bg: #f4fbfc;
+      --text: #1a2a33;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(140deg, var(--bg), #ffffff);
+      color: var(--text);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .landing {
+      width: min(900px, 100%);
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 14px 40px rgba(15, 61, 86, 0.15);
+      display: grid;
+      gap: 24px;
+      grid-template-columns: 1fr;
+      padding: 28px;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--secondary);
+      font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.06rem;
+      max-width: 62ch;
+      line-height: 1.6;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .whatsapp-btn {
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      color: white;
+      background: #25d366;
+      box-shadow: 0 8px 18px rgba(37, 211, 102, 0.35);
+    }
+
+    .form-card {
+      background: #f8fdff;
+      border: 1px solid #d8edf2;
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    form {
+      display: grid;
+      gap: 12px;
+    }
+
+    label {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #20495e;
+      display: grid;
+      gap: 6px;
+    }
+
+    input {
+      border: 1px solid #b7d6df;
+      border-radius: 8px;
+      padding: 11px 12px;
+      font-size: 1rem;
+    }
+
+    button {
+      border: none;
+      border-radius: 10px;
+      padding: 12px 16px;
+      background: var(--primary);
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    @media (min-width: 760px) {
+      .landing {
+        grid-template-columns: 1.2fr 1fr;
+        align-items: start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="landing">
+    <section>
+      <h1>Smile in Albania: Premium Dental Care, Lower Cost</h1>
+      <p>
+        Travel to Albania for high-quality dental treatments with experienced specialists,
+        modern clinics, and transparent prices. Save up to 70% while enjoying your recovery
+        by the Adriatic coast.
+      </p>
+      <div class="actions">
+        <a
+          class="whatsapp-btn"
+          href="https://wa.me/355690000000?text=Hello%2C%20I%20want%20information%20about%20dental%20tourism%20in%20Albania."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Chat on WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <aside class="form-card">
+      <form>
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your full name" required />
+        </label>
+
+        <label>
+          Phone
+          <input type="tel" name="phone" placeholder="+39 000 000000" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required />
+        </label>
+
+        <button type="submit">Request a Free Consultation</button>
+      </form>
+    </aside>
+  </main>
+</body>
+</html>
